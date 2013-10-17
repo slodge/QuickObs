@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Droid.Views;
 
 namespace QuickObs.Droid.Views
@@ -20,6 +21,12 @@ namespace QuickObs.Droid.Views
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.SecondView);
+        }
+
+        protected override void OnDestroy()
+        {
+            Mvx.Trace("OnDestroy called");
+            base.OnDestroy();
         }
     }
 }
