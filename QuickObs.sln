@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickObs.Core", "QuickObs.Core\QuickObs.Core.csproj", "{B3AF8E53-8750-4230-9BD3-1B2F67D695AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickObs.Droid", "QuickObs.Droid\QuickObs.Droid.csproj", "{824EE654-21A6-4308-9326-C98759BA7D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3AF8E53-8750-4230-9BD3-1B2F67D695AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AF8E53-8750-4230-9BD3-1B2F67D695AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AF8E53-8750-4230-9BD3-1B2F67D695AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AF8E53-8750-4230-9BD3-1B2F67D695AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824EE654-21A6-4308-9326-C98759BA7D7F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
