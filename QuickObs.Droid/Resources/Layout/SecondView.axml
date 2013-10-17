@@ -13,6 +13,7 @@
     <MvxLinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:textSize="40dp"
-        local:MvxBind="ItemsSource Things" />
+        android:orientation="vertical"
+        local:MvxItemTemplate="@layout/itemsview1"
+        local:MvxBind="ItemsSource Items" />
 </LinearLayout>

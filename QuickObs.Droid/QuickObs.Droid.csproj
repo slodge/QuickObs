@@ -88,6 +88,12 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
   </ItemGroup>
+<ItemGroup>
+    <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
+      <Project>{b3af8e53-8750-4230-9bd3-1b2f67d695ac}</Project>
+      <Name>QuickObs.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -95,6 +101,10 @@
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\Layout\FirstView.axml" />
     <AndroidResource Include="Resources\Layout\SecondView.axml" />
+    <AndroidResource Include="Resources\Layout\ItemsView2.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ItemsView1.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
@@ -111,12 +121,6 @@
     <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
     <AndroidResource Include="Resources\Drawable\splash.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
-      <Project>{b3af8e53-8750-4230-9bd3-1b2f67d695ac}</Project>
-      <Name>QuickObs.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
