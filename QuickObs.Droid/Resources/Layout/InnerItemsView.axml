@@ -4,5 +4,5 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    local:MvxItemTemplate="@layout/itemsview2"
+    local:MvxItemTemplate="@layout/itemview"
     local:MvxBind="ItemsSource Items" />

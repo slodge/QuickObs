@@ -4,16 +4,42 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <Button
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="Add"
-        local:MvxBind="Click Add" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Retained Subscriptions by MvxListView: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            local:MvxBind="Text SubscriptionCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Retained Subscriptions by MvxLinearLayout: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            local:MvxBind="Text SubscriptionCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     <MvxListView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        local:MvxItemTemplate="@layout/itemsview1"
-        local:MvxBind="ItemsSource Items" />
+        local:MvxItemTemplate="@layout/inneritemsview"
+        local:MvxBind="ItemsSource Items1" />
+    <MvxLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        local:MvxItemTemplate="@layout/inneritemsview"
+        local:MvxBind="ItemsSource Items2" />
 </LinearLayout>

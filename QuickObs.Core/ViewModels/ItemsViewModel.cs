@@ -16,6 +16,8 @@ namespace QuickObs.Core.ViewModels
         {
             private readonly ObservableCollection<T> _inner = new ObservableCollection<T>();
 
+            private int _subscriptionCount;
+
             public PObservableCollection()
             {
                 _inner.CollectionChanged += InnerChanged;
@@ -28,21 +30,20 @@ namespace QuickObs.Core.ViewModels
                     handler(this, notifyCollectionChangedEventArgs);
             }
 
-            private int _count;
             private event NotifyCollectionChangedEventHandler _collectionChanged;
             public event NotifyCollectionChangedEventHandler CollectionChanged
             {
                 add
                 {
                     _collectionChanged += value;
-                    _count++;
-                    Mvx.Trace("Count up to {0}", _count);
+                    this._subscriptionCount++;
+                    Mvx.Trace("Count up to {0}", this._subscriptionCount);
                 }
                 remove
                 {
                     _collectionChanged -= value;
-                    _count--;
-                    Mvx.Trace("Count down to {0}", _count);
+                    this._subscriptionCount--;
+                    Mvx.Trace("Count down to {0}", this._subscriptionCount);
                 }
             }
 
@@ -156,20 +157,41 @@ namespace QuickObs.Core.ViewModels
                 get { return _inner[index]; }
                 set { throw new NotImplementedException(); }
             }
+
+            public int SubscriptionCount
+            {
+                get
+                {
+                    return this._subscriptionCount;
+                }
+            }
         }
         #endregion
 
-        private readonly PObservableCollection<string> _items = new PObservableCollection<string>()
+        private readonly PObservableCollection<string> _items;
+
+        public ItemsViewModel()
         {
-            "1",
-            "2"
-        };
+            this._items = new PObservableCollection<string>()
+            {
+                "1",
+                "2"
+            };
+        }
 
         public IEnumerable Items
         {
             get
             {
                 return this._items; 
+            }
+        }
+
+        public int SubscriptionCount
+        {
+            get
+            {
+                return this._items.SubscriptionCount;
             }
         }
     }

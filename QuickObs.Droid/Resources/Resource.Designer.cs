@@ -84,9 +84,6 @@ namespace QuickObs.Droid
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
 			
-			// aapt resource value: 0x7f040001
-			public const int MyButton = 2130968577;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -104,19 +101,16 @@ namespace QuickObs.Droid
 			public const int FirstView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int ItemsView1 = 2130903041;
+			public const int InnerItemsView = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int ItemsView2 = 2130903042;
+			public const int ItemView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int SecondView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SecondView = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public const int SplashScreen = 2130903045;
+			public const int SplashScreen = 2130903044;
 			
 			static Layout()
 			{

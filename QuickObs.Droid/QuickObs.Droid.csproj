@@ -88,6 +88,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\SecondView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
@@ -100,15 +101,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\Layout\FirstView.axml" />
-    <AndroidResource Include="Resources\Layout\SecondView.axml" />
-    <AndroidResource Include="Resources\Layout\ItemsView2.axml">
+    <AndroidResource Include="Resources\Layout\ItemView.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\ItemsView1.axml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Layout\Main.axml" />
+    <AndroidResource Include="Resources\Layout\FirstView.axml" />
+    <AndroidResource Include="Resources\Layout\InnerItemsView.axml" />
+    <AndroidResource Include="Resources\Layout\SecondView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
