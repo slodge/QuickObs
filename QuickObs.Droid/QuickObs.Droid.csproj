@@ -61,6 +61,7 @@
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.13\lib\MonoAndroid16\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -87,8 +88,9 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\ViewPagerImpl.cs" />
   </ItemGroup>
-<ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
       <Project>{b3af8e53-8750-4230-9bd3-1b2f67d695ac}</Project>
       <Name>QuickObs.Core</Name>

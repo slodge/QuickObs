@@ -14,9 +14,9 @@ namespace QuickObs.Core.ViewModels
         private readonly static ObservableCollection<ItemsViewModel> _Items = new ObservableCollection<ItemsViewModel>()
         {
             new ItemsViewModel(),
-            new ItemsViewModel(),
-            new ItemsViewModel(),
-            new ItemsViewModel(),
+            //new ItemsViewModel(),
+            //new ItemsViewModel(),
+            //new ItemsViewModel(),
         };
 
         public ObservableCollection<ItemsViewModel> Items
@@ -31,7 +31,7 @@ namespace QuickObs.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => _Items[0].Items.Insert(0, "New" + ((IList)_Items).Count.ToString()));
+                return new MvxCommand(() => ((IList<string>)_Items[0].Items).Insert(0, "New" + ((IList)_Items).Count.ToString()));
             }
         }
     }
