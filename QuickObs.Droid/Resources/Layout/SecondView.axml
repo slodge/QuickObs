@@ -10,9 +10,10 @@
         android:textSize="40dp"
         android:text="Add"
         local:MvxBind="Click Add" />
-    <ViewPagerImpl
+    <MvxListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        local:MvxBind="Items Items" />
+        local:MvxItemTemplate="@layout/itemsview1"
+        local:MvxBind="ItemsSource Items" />
 </LinearLayout>

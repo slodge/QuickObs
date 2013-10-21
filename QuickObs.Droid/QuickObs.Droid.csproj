@@ -88,7 +88,6 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
-    <Compile Include="Views\ViewPagerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
