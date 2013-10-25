@@ -14,5 +14,5 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Text Hello" />
+        local:MvxBind="Text Hello; BackgroundColor RGBA('#ff0000')" />
 </LinearLayout>
