@@ -67,6 +67,7 @@
       <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.0.13\lib\MonoAndroid16\Cirrious.MvvmCross.Plugins.Color.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,17 +95,27 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\MyAdapter.cs" />
+    <Compile Include="Views\SecondView.cs" />
+    <Compile Include="Views\SpecialListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
+      <Project>{b3af8e53-8750-4230-9bd3-1b2f67d695ac}</Project>
+      <Name>QuickObs.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\Layout\ItemView.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\Layout\FirstView.axml" />
+    <AndroidResource Include="Resources\Layout\InnerItemsView.axml" />
     <AndroidResource Include="Resources\Layout\SecondView.axml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Layout\Main.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
@@ -118,12 +129,6 @@
     <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
     <AndroidResource Include="Resources\Drawable\splash.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QuickObs.Core\QuickObs.Core.csproj">
-      <Project>{b3af8e53-8750-4230-9bd3-1b2f67d695ac}</Project>
-      <Name>QuickObs.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
